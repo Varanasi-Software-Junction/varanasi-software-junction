@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        p[title]{/*Contains the title attribute*/
+            color:cyan
+        }
+
+        p[lang^="#"]{/*Starts with #*/
+            background-color: silver;
+            color: gold;
+            font-size: x-large;
+        }
+
+        p[lang="gold"]{/*equal to*/
+            color: gold;
+            background-color: black;
+        }
+       
+        div{
+            font-style: italic;
+            font-size: x-large;
+        }
+
+        span[title*="org"]{/*Contains*/
+            font-size: xx-large;
+            background-color: black;
+
+        }
+        span[title$="red"]{/*Ends with*/
+            color: red;
+
+        }
+        a[title^="start"][title$=".end"] {/*Starts with start and ends with .end*/
+  color: green;
+}
+
+    </style>
+        
+</head>
+<body>
+    <ul>
+    <li><div>I am a paragraph of div class</div></li>
+</ul>
+<p>This is a paragraph without title.</p>
+<p title="hjhj">This is a paragraph with title.</p>
+<h1><p lang="gold">This is a paragraph of gold text</p></h1>
+<p lang="#">This is a paragraph of silver bg</p>
+<span title="org red">this is best </span>
+</body>
+</html>
