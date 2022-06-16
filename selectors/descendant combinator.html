@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant combinator</title>
+    <style>
+        div{
+            color: red;
+            list-style-type: disc;
+            font-style:normal;
+            font-size: x-large;
+        }
+
+        div div {
+            color: blue;
+            list-style-type: circle;
+        }
+        div div div{
+            color: lawngreen;
+            font-size: larger;
+
+        } 
+    </style>
+</head>
+<body>
+    <ul>
+        <div>
+           <li> First selector:</li>
+            <div>First Selector</div>
+            <div>Second Selector</div>
+            <div><div>Third Selector</div></div>
+        </div>
+    </ul>
+    <center>
+           <div><div><div>Descendant selector complete </div></div></div>
+        </center>
+ 
+    
+</body>
+</html>
