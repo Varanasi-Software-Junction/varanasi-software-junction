@@ -2,9 +2,9 @@
 <html lang="en-US">
 
 <head>
-    <title>VSJ Editor</title>
+    <title>VSJ Spinner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--[if lt IE 8]>
 <style>
 #textareacontainer, #iframecontainer {width:48%;}
@@ -17,9 +17,10 @@
 </head>
 
 <body>
-<!--**********************************************-->
+    <!--**********************************************-->
 
-    <link rel="stylesheet" href="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/css/codemirror.css">
+    <link rel="stylesheet"
+        href="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/css/codemirror.css">
     <script>
         if (window.addEventListener) {
             window.addEventListener("resize", browserResize);
@@ -502,7 +503,7 @@
             background-color: #4b5b68
         }
     </style>
-<!--***************************************************-->
+    <!--***************************************************-->
     <div id='tryitLeaderboard'>
         <!-- TryitLeaderboard -->
 
@@ -532,7 +533,7 @@
             <span onclick="openMenu()" class="w3-button w3-display-topright w3-transparent ws-hover-black"
                 title="Close Menu" style="font-weight:bold;padding-top:10px;padding-bottom:11px;">&times;</span>
             <div class="w3-bar-block">
-               </div>
+            </div>
             <footer class="w3-container w3-small ws-grey">
                 <p> </p>
             </footer>
@@ -543,42 +544,73 @@
                 <div id="textareawrapper">
                     <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
 
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <title>Animation Demo</title>
-            <style>
-            .myimage {
-              
-              height: 100px;
-              border-color: red;
-              border-width: 10px;
-              border-style: ridge;
-              animation-name: imageanimation;/*Name of the animation. To be used in keyframes*/
-              animation-duration: 4s;/*Time for one animation*/
-              animation-iteration-count: infinite;/*No of repetitions*/
-              width: 300px;
-            }
-            
-            @keyframes imageanimation {/*Divisions of the durations*/
-              0%   {border-color: red;}
-              25%  {border-color: yellow;}
-              50%  {border-color: blue;}
-              100% {border-color: green;}
-            }
-            </style>
-            </head>
-            <body>
-            
-            <h1>Animation Demo</h1>
-            
-            <img src="https://3.bp.blogspot.com/-py5FbTZgvjo/YDi1bsQq16I/AAAAAAAACB0/BxejbJBcHA4AVfkB33WYC3YlVmxElM7BwCK4BGAYYCw/s1600/Varanasi%2BSoftware%2BJunction%2BPhone%2BLogo.png" class="myimage">
-            
-            </body>
-            </html>
-            
-            
-            
+                        <!DOCTYPE html>
+                        <html>
+                        
+                        <head>
+                          <title>Animation Demo</title>
+                          <style>
+                            img {
+                        
+                              height: 300px;
+                              position: absolute;
+                              left: 300px;
+                              border-width: 2px;
+                              border-color: red;
+                              border-style: ridge;
+                              border-radius: 50%;
+                              width: 300px;
+                              animation-name: backgroundanimation;
+                              animation-duration: 10s;
+                              animation-iteration-count: 4;
+                              animation-delay: 1s;
+                              animation-fill-mode: forwards;
+                              /* animation-direction: alternate; */
+                              animation-timing-function: linear;
+                              /* Animation directions are divided into 4 steps :-
+                                       1.Normal - this is default value it will not do any thing
+                                       2.Reverse - This reverses the direction of rotation of image or object.
+                                       3.alternate- it do altetrnantely like first rotate in clockwise and then anticlockwise
+                                       4.alternate-Reverse - it firt rotate in anticlockwise then in clockwise diection. 
+                        
+                                       
+                                       */
+                        
+                        
+                            }
+                        
+                            @keyframes backgroundanimation {
+                        
+                              /*Divisions of the durations*/
+                              0% {
+                                left: 300px;
+                                
+                              }
+                        
+                              100% {
+                                transform: rotate(360deg)
+                              }
+                            }
+                        
+                            /*
+                                    1.red
+                                    2. blue
+                                    3. yellow
+                                    4.green
+                                    
+                                    
+                                    */
+                          </style>
+                        </head>
+                        
+                        <body>
+                        
+                          <img
+                            src="https://3.bp.blogspot.com/-py5FbTZgvjo/YDi1bsQq16I/AAAAAAAACB0/BxejbJBcHA4AVfkB33WYC3YlVmxElM7BwCK4BGAYYCw/s1600/Varanasi%2BSoftware%2BJunction%2BPhone%2BLogo.png" />"
+                        
+                        </body>
+                        
+                        </html>     
 
 </textarea>
                     <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
@@ -617,8 +649,10 @@
         }
     </style>
 
-    <script src="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/js/codemirror.js"></script>
-    <script src="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/js/codemirror_jsx.js"></script>
+    <script
+        src="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/js/codemirror.js"></script>
+    <script
+        src="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/js/codemirror_jsx.js"></script>
     <script>
         submitTryit()
 
@@ -874,6 +908,6 @@
         }
         //uic_r_e()
     </script>
-   </body>
+</body>
 
 </html>

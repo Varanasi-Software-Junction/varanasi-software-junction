@@ -543,41 +543,55 @@
                 <div id="textareawrapper">
                     <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
 
+
+                       
             <!DOCTYPE html>
             <html>
             <head>
                 <title>Animation Demo</title>
             <style>
-            .myimage {
-              
-              height: 100px;
-              border-color: red;
-              border-width: 10px;
-              border-style: ridge;
-              animation-name: imageanimation;/*Name of the animation. To be used in keyframes*/
-              animation-duration: 4s;/*Time for one animation*/
-              animation-iteration-count: infinite;/*No of repetitions*/
-              width: 300px;
+           div {
+           			border-color:red;
+                    border-style:ridge;
+                    border-width:2px;
+                    width:200px;
+                    position:absolute;
+                    left:40%;
+                    top:-50px;
+                    
+                    border-radius:2%;
+                    animation-name:toptomiddle;
+                    animation-duration:5s;
+                    animation-iteration-count:1;
+                    animation-fill-mode:forwards;
+                    
+                    
+                    
             }
+            @keyframes toptomiddle
+            {
+            0%{border-color:yellow;top:0px;height:0px; transform:rotate(0deg);}
+            50%{border-color:green;top:200px;height:100px;
+            transform:rotate(0deg);}
+            60%{border-color:green;top:200px;height:100px; transform:rotate(20deg);border-width:7px;}
+             70%{border-color:green;top:200px;height:100px; transform:rotate(-20deg);border-width:15px;}
+           
+            100%{border-color:red;top:200px;height:100px; transform:rotate(0deg);}
             
-            @keyframes imageanimation {/*Divisions of the durations*/
-              0%   {border-color: red;}
-              25%  {border-color: yellow;}
-              50%  {border-color: blue;}
-              100% {border-color: green;}
             }
             </style>
             </head>
             <body>
             
-            <h1>Animation Demo</h1>
-            
-            <img src="https://3.bp.blogspot.com/-py5FbTZgvjo/YDi1bsQq16I/AAAAAAAACB0/BxejbJBcHA4AVfkB33WYC3YlVmxElM7BwCK4BGAYYCw/s1600/Varanasi%2BSoftware%2BJunction%2BPhone%2BLogo.png" class="myimage">
+           <div>Content</div>
             
             </body>
             </html>
             
             
+            
+
+
             
 
 </textarea>

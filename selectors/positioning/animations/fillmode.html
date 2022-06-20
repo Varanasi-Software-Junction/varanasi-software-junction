@@ -543,40 +543,74 @@
                 <div id="textareawrapper">
                     <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
 
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <title>Animation Demo</title>
-            <style>
-            .myimage {
-              
-              height: 100px;
-              border-color: red;
-              border-width: 10px;
-              border-style: ridge;
-              animation-name: imageanimation;/*Name of the animation. To be used in keyframes*/
-              animation-duration: 4s;/*Time for one animation*/
-              animation-iteration-count: infinite;/*No of repetitions*/
-              width: 300px;
-            }
-            
-            @keyframes imageanimation {/*Divisions of the durations*/
-              0%   {border-color: red;}
-              25%  {border-color: yellow;}
-              50%  {border-color: blue;}
-              100% {border-color: green;}
-            }
-            </style>
-            </head>
-            <body>
-            
-            <h1>Animation Demo</h1>
-            
-            <img src="https://3.bp.blogspot.com/-py5FbTZgvjo/YDi1bsQq16I/AAAAAAAACB0/BxejbJBcHA4AVfkB33WYC3YlVmxElM7BwCK4BGAYYCw/s1600/Varanasi%2BSoftware%2BJunction%2BPhone%2BLogo.png" class="myimage">
-            
-            </body>
-            </html>
-            
+                        <!DOCTYPE html>
+                        <html>
+                        
+                        <head>
+                          <title>Animation Demo</title>
+                          <style>
+                            div {
+                        
+                              height: 300px;
+                              background-color: pink;
+                              position: absolute;
+                              width: 300px;
+                              animation-name: backgroundanimation;
+                              animation-duration: 8s;
+                              animation-iteration-count: 1;
+                              animation-delay: -3s;
+                              animation-fill-mode: none;
+                              /*
+                                       1. none      => This fill mod animation do nothing it will be as default.
+                                       2. backwards => This fill mode animation will be stopped at the 0% position.
+                                       3. farwards  => This fill mode animation will be stopped at the 100% position.
+                                       4. Both      => This fill mode animation will be start at 0% position and stopped at 100% position.
+                        
+                                       */
+                        
+                        
+                            }
+                        
+                            @keyframes backgroundanimation {
+                        
+                              /*Divisions of the durations*/
+                              0% {
+                                background-color: red;
+                              }
+                        
+                              25% {
+                                background-color: blue;
+                              }
+                        
+                              50% {
+                                background-color: yellow;
+                              }
+                        
+                              100% {
+                                background-color: green;
+                              }
+                            }
+                        
+                            /*
+                                    1.red
+                                    2. blue
+                                    3. yellow
+                                    4.green
+                                    
+                                    
+                                    */
+                          </style>
+                        </head>
+                        
+                        <body>
+                        
+                          <div>Animation Demo</div>
+                        
+                        
+                        
+                        </body>
+                        
+                        </html>          
             
             
 

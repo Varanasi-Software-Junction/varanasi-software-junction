@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Animation Demo</title>
+  <style>
+    img {
+
+      height: 300px;
+      position: absolute;
+      left: 300px;
+      border-radius: 50%;
+      width: 300px;
+      animation-name: backgroundanimation;
+      animation-duration: 10s;
+      animation-iteration-count: 4;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      /* animation-direction: alternate; */
+      animation-timing-function: linear;
+      /* Animation directions are divided into 4 steps :-
+               1.Normal - this is default value it will not do any thing
+               2.Reverse - This reverses the direction of rotation of image or object.
+               3.alternate- it do altetrnantely like first rotate in clockwise and then anticlockwise
+               4.alternate-Reverse - it firt rotate in anticlockwise then in clockwise diection. 
+
+               
+               */
+
+
+    }
+
+    @keyframes backgroundanimation {
+
+      /*Divisions of the durations*/
+      0% {
+        left: 300px;
+        top: 0px;
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    /*
+            1.red
+            2. blue
+            3. yellow
+            4.green
+            
+            
+            */
+  </style>
+</head>
+
+<body>
+
+  <img
+    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtqYu3Sg0uOJ_2SB0fwTvhRUAtGun7rPjlLDYGcy4mvaYFcFTV4xt70WpUPgLv_14F8kK13RqjTcoxoAOt6_GzadmruTVWUdrA6FENaAnMUl_IfFlhxLcf64wXUcAgWlt-2egamcMcvsb_Wd09ovIyU6BserWBGpcSVk3GfttO4CClVz9LDa-bsXBx/s1600/cr.jpg" />"
+
+</body>
+
+</html>

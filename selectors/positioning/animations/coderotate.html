@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Animation Demo</title>
+  <style>
+    img {
+
+      height: 300px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      border-color: red;
+      border-width: 2px;
+      border-style: ridge;
+      border-radius: 50%;
+      width: 300px;
+      animation-name: backgroundanimation;
+      animation-duration: 10s;
+      animation-iteration-count: 1;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+
+
+    }
+
+    @keyframes backgroundanimation {
+
+      /*Divisions of the durations*/
+      0% {
+        left: 0px;
+        top: 0px;
+      }
+
+      20% {
+        left: 200px;
+        top: 300px;
+        transform: rotate(220deg);
+      }
+
+      40% {
+        left: 400px;
+        top: 0px;
+        transform: rotate(420deg)
+      }
+
+      60% {
+        left: 600px;
+        top: 300px;
+        transform: rotate(620deg)
+      }
+
+      80% {
+        left: 800px;
+        top: 0px;
+        transform: rotate(750deg)
+      }
+
+      100% {
+        left: 1000px;
+        top: 300px;
+        transform: rotate(1080deg)
+      }
+    }
+
+    /*
+            1.red
+            2. blue
+            3. yellow
+            4.green
+            
+            
+            */
+  </style>
+</head>
+
+<body>
+
+  <img
+    src="https://3.bp.blogspot.com/-py5FbTZgvjo/YDi1bsQq16I/AAAAAAAACB0/BxejbJBcHA4AVfkB33WYC3YlVmxElM7BwCK4BGAYYCw/s1600/Varanasi%2BSoftware%2BJunction%2BPhone%2BLogo.png" />
+
+</body>
+
+</html>

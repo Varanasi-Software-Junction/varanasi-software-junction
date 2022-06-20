@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Animation Demo</title>
+  <style>
+    div {
+
+      height: 300px;
+      background-color: pink;
+      position: absolute;
+      width: 300px;
+      animation-name: backgroundanimation;
+      animation-duration: 8s;
+      animation-iteration-count: 1;
+      animation-delay: -3s;
+      animation-fill-mode: none;
+      /*
+               1. none      => This fill mod animation do nothing it will be as default.
+               2. backwards => This fill mode animation will be stopped at the 0% position.
+               3. farwards  => This fill mode animation will be stopped at the 100% position.
+               4. Both      => This fill mode animation will be start at 0% position and stopped at 100% position.
+
+               */
+
+
+    }
+
+    @keyframes backgroundanimation {
+
+      /*Divisions of the durations*/
+      0% {
+        background-color: red;
+      }
+
+      25% {
+        background-color: blue;
+      }
+
+      50% {
+        background-color: yellow;
+      }
+
+      100% {
+        background-color: green;
+      }
+    }
+
+    /*
+            1.red
+            2. blue
+            3. yellow
+            4.green
+            
+            
+            */
+  </style>
+</head>
+
+<body>
+
+  <div>Animation Demo</div>
+
+
+
+</body>
+
+</html>
