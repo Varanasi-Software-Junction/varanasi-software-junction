@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: flex;
+            border: solid lightblue;
+            height: 30px;
+        }
+        .div{
+            height: 200px;
+            border: solid palevioletred;
+        }
+        .cont{
+         display: flex;
+         height: 205px;
+         width: 820px;
+         border: solid lightblue;
+         flex-wrap: wrap;
+        }
+        .box{
+            background-color: lightpink;
+            height: 200px;
+            width: 600px;
+            flex-wrap: wrap;
+        }
+        #row-rev {
+  flex-direction: row-reverse;
+        } 
+
+    </style>
+</head>
+<body> 
+    <div class="header"></div>
+    <div id="row-rev" class=" div cont">
+        <div class=" div box red">A</div>
+        <div class=" div box lightblue">B</div>
+      </div>
+      <div class="header"></div>
+      
+    
+
+  
+</body>
+</html>

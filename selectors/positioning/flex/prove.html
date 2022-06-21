@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            border: solid red;
+            width: 800px;
+            height: 500px;
+        }
+        .div{
+            border: solid skyblue;
+            height:40px; 
+            
+        }
+        .container {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 400px;
+
+}
+    </style>
+</head>
+<body>
+    <header>
+   <div style="height: 60px; background-color: lightblue;">I am header
+</header>
+
+<main>
+   <container class="container">
+    <p style=" background-color: lightcoral; width: 800px; height: 383px;">one</p>
+    <p style="width:545px ; background-color: aqua; height: 383px;">two</p>
+   </container>
+</main>
+    <footer class="div">Iam footer
+
+    </footer>
+</div>
+
+    
+    
+</body>
+</html>
