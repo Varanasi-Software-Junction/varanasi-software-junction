@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Demo</title>
+    <style>
+        ::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:green; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: teal; 
+}
+body
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+}
+        textarea
+        {
+            text-align: left;
+            font-size: 25px;
+            background-color: gray;
+            color: white;
+            margin: 5px;
+            width: 400px;
+            height: 200px;
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <h1>Setting Up flex</h1>
+    <textarea>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Animation Demo</title>
+        <style>
+        .myflexcontainer {
+         display:flex;
+         border-color:red;
+         border-width:2px;
+         border-style:ridge;
+        }
+          .myflexitem {
+         background-color: teal;
+margin: 10px;
+padding: 50px;
+font-size: 30px;
+        }
+        
+       
+        
+        </style>
+        </head>
+        <body>
+        
+        <h1>Flex Demo</h1>
+        <div class="myflexcontainer">
+        <div class="myflexitem">1</div>
+        <div class="myflexitem">2</div>
+        <div class="myflexitem">3</div>
+        <div class="myflexitem">4</div>
+        <div class="myflexitem">5</div>
+        <div class="myflexitem">6</div>
+        
+        
+        </div>
+        
+        </body>
+        </html>
+        
+        
+        
+
+
+
+
+    </textarea>
+</div>
+<div>
+    <h1>Flex Direction</h1>
+    <textarea>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Animation Demo</title>
+        <style>
+        .myflexcontainer {
+         display:flex;
+         border-color:red;
+         border-width:2px;
+         border-style:ridge;
+         flex-direction:row-reverse;/* row,column,row-reverse,column-reverse*/
+        }
+          .myflexitem {
+         background-color: teal;
+margin: 10px;
+padding: 50px;
+font-size: 30px;
+        }
+        
+       
+        
+        </style>
+        </head>
+        <body>
+        
+        <h1>Flex Demo</h1>
+        <div class="myflexcontainer">
+        <div class="myflexitem">1</div>
+        <div class="myflexitem">2</div>
+        <div class="myflexitem">3</div>
+        <div class="myflexitem">4</div>
+        <div class="myflexitem">5</div>
+        <div class="myflexitem">6</div>
+        
+        
+        </div>
+        </body>
+        </html>
+        
+        
+        
+
+
+
+
+    
+    </textarea>
+</div>
+<div>
+    <h1>Wrap</h1>
+    <textarea>
+
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Animation Demo</title>
+        <style>
+        .myflexcontainer {
+         display:flex;
+         border-color:red;
+         border-width:2px;
+         border-style:ridge;
+         
+         flex-wrap:wrap-reverse;/*nowrap,wrap,wrap-reverse*/
+        }
+          .myflexitem {
+         background-color: teal;
+margin: 10px;
+padding: 50px;
+font-size: 30px;
+        }
+        
+       
+        
+        </style>
+        </head>
+        <body>
+        
+        <h1>Flex Demo</h1>
+        <div class="myflexcontainer">
+        <div class="myflexitem">1</div>
+        <div class="myflexitem">2</div>
+        <div class="myflexitem">3</div>
+        <div class="myflexitem">4</div>
+        <div class="myflexitem">5</div>
+        <div class="myflexitem">6</div>
+        
+        
+        </div>
+        </body>
+        </html>
+        
+        
+        
+
+
+
+
+    
+
+    </textarea>
+</div>
+<div>
+    <h1>Justify Content</h1>
+    <textarea>
+
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Animation Demo</title>
+        <style>
+        .myflexcontainer {
+         display:flex;
+         border-color:red;
+         border-width:2px;
+         border-style:ridge;
+         justify-content: center;
+         /*
+         flex-start
+         center
+         flex-end
+         space-around
+         space-between
+         */
+
+        }
+          .myflexitem {
+         background-color: teal;
+margin: 10px;
+padding: 50px;
+font-size: 30px;
+        }
+        
+       
+        
+        </style>
+        </head>
+        <body>
+        
+        <h1>Flex Demo</h1>
+        <div class="myflexcontainer">
+        <div class="myflexitem">1</div>
+        <div class="myflexitem">2</div>
+        <div class="myflexitem">3</div>
+
+        
+        
+        </div>
+        </body>
+        </html>
+        
+        
+        
+
+
+
+
+    
+    </textarea>
+</div>
+<div>
+    <h1>Align-Items</h1>
+    <textarea>
+
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Animation Demo</title>
+        <style>
+        .myflexcontainer {
+         display:flex;
+         border-color:red;
+         border-width:2px;
+         border-style:ridge;
+         height:400px;
+      align-items:center;
+      /*
+      flex-start,center, flex-end,stretch, baseline
+      */
+
+        }
+          .myflexitem {
+         background-color: teal;
+         height:100px;
+margin: 10px;
+padding: 50px;
+font-size: 30px;
+        }
+        
+       
+        
+        </style>
+        </head>
+        <body>
+        
+        <h1>Flex Demo</h1>
+        <div class="myflexcontainer">
+        <div class="myflexitem">1</div>
+        <div class="myflexitem">2</div>
+        <div class="myflexitem">3</div>
+
+        
+        
+        </div>
+        </body>
+        </html>
+        
+        
+        
+
+
+
+
+    
+    </textarea>
+</div>
+<div>
+    <h1>Align-Content</h1>
+    <textarea>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Animation Demo</title>
+        <style>
+        .myflexcontainer {
+         display:flex;
+         border-color:red;
+         border-width:2px;
+         border-style:ridge;
+         height:400px;
+         flex-wrap:wrap;
+         align-content:space-between;
+      
+      /*
+      flex-start,center, flex-end,stretch, baseline
+      */
+
+        }
+          .myflexitem {
+         background-color: teal;
+         height:100px;
+margin: 10px;
+padding: 50px;
+font-size: 30px;
+        }
+        
+       
+        
+        </style>
+        </head>
+        <body>
+        
+        <h1>Flex Demo</h1>
+        <div class="myflexcontainer">
+        <div class="myflexitem">1</div>
+        <div class="myflexitem">2</div>
+        <div class="myflexitem">3</div>
+        <div class="myflexitem">4</div>
+        <div class="myflexitem">5</div>
+        <div class="myflexitem">6</div>
+        <div class="myflexitem">7</div>
+        <div class="myflexitem">8</div>
+        <div class="myflexitem">9</div>
+        <div class="myflexitem">10</div>
+        <div class="myflexitem">11</div>
+        <div class="myflexitem">12</div>
+
+        
+        
+        </div>
+        </body>
+        </html>
+        
+        
+        
+
+
+
+
+    
+
+
+
+
+    </textarea>
+</div>
+<div>
+    <h1>Center</h1>
+    <textarea>
+
+        <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: teal;
+}
+
+div {
+  background-color: pink;
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+</style>
+</head>
+<body>
+
+  <div></div>
+
+
+</body>
+</html>
+
+
+
+    </textarea>
+</div>
+</body>
+
+</html>
