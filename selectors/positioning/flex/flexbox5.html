@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box 5</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            border: solid teal;
+            border-width: 4px;
+            flex-direction:row;
+            justify-content: center;
+
+        }
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            border: solid lawngreen;
+            margin: 10px;
+            flex-direction: column;
+        }
+        .col{
+            display: flex;
+            flex-wrap: wrap;
+            border: solid white;
+            margin: 10px;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            border: solid white;
+            background-color: aqua;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style=" background-color: yellow;" class="box"> <h1>box 1</h1></div>
+        <div class="box">
+            <div style="background-color: lightgreen;" class="col">jj </div>
+            <div class="col">
+                <div class="row"> <h1>lkg</h1></div>
+                <div class="row"> <h1>ukg</h1></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

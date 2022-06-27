@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .myflexcolumncontainer {
+         display:flex;
+         border-color:red;
+         border-width:2px;
+         border-style:ridge;
+         flex-direction:column;
+        }
+        .myflexrowcontainer {
+         display:flex;
+         border-color:blue;
+         border-width:2px;
+         border-style:ridge;
+         flex-direction:row;
+         flex-wrap:wrap;
+         justify-content: space-around;
+         
+         
+        }
+          .myflexitem {
+         background-color: teal;
+margin: 10px;
+padding: 50px;
+font-size: 30px;
+        }
+        
+       
+        
+    </style>
+</head>
+<body>
+    <h1>Flex Demo</h1>
+        <div class="myflexcolumncontainer">
+        
+        <div class="myflexrowcontainer">
+        <div class="myflexitem">1</div>
+        <div class="myflexitem">2</div>
+        <div class="myflexitem">3</div>
+        <div class="myflexitem">4</div>
+        <div class="myflexitem">5</div>
+        <div class="myflexitem">6</div>
+        
+        </div>
+        
+        
+        <div class="myflexrowcontainer">
+        
+        <div class="myflexitem">1</div>
+        <div class="myflexitem">2</div>
+        <div class="myflexitem">3</div>
+        <div class="myflexcolumncontainer">
+        <div class="myflexitem">1</div>
+        <div class="myflexitem">2</div>
+        
+        
+        
+        </div>
+        
+        </div>
+        </div>
+        
+    
+</body>
+</html>

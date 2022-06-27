@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box 2</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            border: solid red;
+            border-width: 4px;
+            flex-direction:column;
+            justify-content: center;
+        }
+
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            border: solid black;
+            margin: 10px;
+
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            border: solid orangered;
+            margin: 10px;
+            
+        }
+        .colm{
+            display: flex;
+            flex-direction: wrap;
+            border: solid orange;
+            margin: 10px;
+        }
+        .gap{
+            flex-wrap: wrap;  
+            justify-content: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  style="background-color: skyblue ;" class="box gap"> <h1 >header</h1></div>
+        <div class="box gap"> 
+            <div class="row gap">
+                <div style="background-color: lightcoral;" class="colm gap"> <h2>a.colmbhefhefbfe <br>nfffjo  <br> jjfpffh</h2></div>
+                <div class="colm gap"> <h2>a.colm bvbcbhbo <br> oewfjwmbe <br>kjfofbeijfbeoj <br>
+                jkeuewh</h2></div>
+            </div>
+            <div class="row">
+                <div style="background-color: yellow;" class="colm"> <h2>c.colm hbdifehfewbfeeoh2eyrgrory82eyg <br>bdihfhfewfih <br>jhdhfbiffbefew <br>djdhcdvogfewf <br>Lorem ipsum dolor sit amet. <br>Lorem ipsum dolor sit amet. br Lorem ipsum dolor sit amet.</h2></div>
+                <div style="background-color:gray ;" class="colm"> <h2>d.colm</h2></div>
+            </div>
+
+
+        </div>
+        <div class="box"> <h1>3.col</h1>
+            <div class="row"> <h2>a.row</h2></div>
+            <div class="colm"> <h2>b.row</h2></div>
+        </div>
+        <div class="box"> <h1>4.col</h1></div>
+    </div>
+    
+</body>
+</html>
