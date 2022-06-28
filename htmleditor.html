@@ -4,7 +4,7 @@
 <head>
     <title>VSJ Editor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--[if lt IE 8]>
 <style>
 #textareacontainer, #iframecontainer {width:48%;}
@@ -14,12 +14,53 @@
 .stack {display:none;}
 </style>
 <![endif]-->
+    <script>
+        function saveHtml()
+        {
+            let data=document.getElementById("textareaCode").value;
+            //alert(data);
+            data="Champak";
+            console.log(data);
+            saveData("html",data);
+        }
+        function saveData(key, data) {
+            try {
+                localStorage.setItem(key, data);
+                console.log("Saved " + data);
+                return true;
+            }
+            catch (e) {
+                console.log(e);
+                return false;
+            }
+        }
+        function readData(key) {
+            let data = localStorage.getItem(key);
+            return data;
+        }
+        function deleteDataByKey(key) {
+            localStorage.removeItem(key);
+        }
+        function deleteAllData(key) {
+            localStorage.clear();
+        }
+        function loadData()
+        {
+            let data=readData("html");
+            let txteditor=document.getElementById("textareaCode");
+            txteditor.value=data;
+            console.log("Loaded " + data);
+            //txteditor.innerHTML="bnvnv";
+        }
+
+    </script>
 </head>
 
 <body>
-<!--**********************************************-->
+    <!--**********************************************-->
 
-    <link rel="stylesheet" href="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/css/codemirror.css">
+    <link rel="stylesheet"
+        href="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/css/codemirror.css">
     <script>
         if (window.addEventListener) {
             window.addEventListener("resize", browserResize);
@@ -35,9 +76,6 @@
                 (xbeforeResize < (468) && afterResize >= (468)) || (xbeforeResize >= (468) && afterResize < (468))) {
                 xbeforeResize = afterResize;
 
-                if (document.getElementById("adngin-try_it_leaderboard-0")) {
-                    adngin.queue.push(function () { adngin.cmd.startAuction(["try_it_leaderboard"]); });
-                }
 
             }
             if (window.screen.availWidth <= 768) {
@@ -502,15 +540,8 @@
             background-color: #4b5b68
         }
     </style>
-<!--***************************************************-->
-    <div id='tryitLeaderboard'>
-        <!-- TryitLeaderboard -->
-
-        <!--<pre>try_it_leaderboard, all: [320,50][728,90][468,60]</pre>-->
-        <div id="adngin-try_it_leaderboard-0"></div>
-        <!-- adspace tryit-->
-
-    </div>
+    <!--***************************************************-->
+   
 
 
     <div class="trytopnav">
@@ -532,53 +563,16 @@
             <span onclick="openMenu()" class="w3-button w3-display-topright w3-transparent ws-hover-black"
                 title="Close Menu" style="font-weight:bold;padding-top:10px;padding-bottom:11px;">&times;</span>
             <div class="w3-bar-block">
-               </div>
+            </div>
             <footer class="w3-container w3-small ws-grey">
                 <p> </p>
             </footer>
         </div>
         <div id="menuOverlay" class="w3-overlay w3-transparent" style="cursor:pointer;z-index:4"></div>
         <div id="textareacontainer">
-            <div id="textarea">
+            <div id="textarea" onkeyup="saveHtml()">
                 <div id="textareawrapper">
                     <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
-
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <title>Animation Demo</title>
-            <style>
-            .myimage {
-              
-              height: 100px;
-              border-color: red;
-              border-width: 10px;
-              border-style: ridge;
-              animation-name: imageanimation;/*Name of the animation. To be used in keyframes*/
-              animation-duration: 4s;/*Time for one animation*/
-              animation-iteration-count: infinite;/*No of repetitions*/
-              width: 300px;
-            }
-            
-            @keyframes imageanimation {/*Divisions of the durations*/
-              0%   {border-color: red;}
-              25%  {border-color: yellow;}
-              50%  {border-color: blue;}
-              100% {border-color: green;}
-            }
-            </style>
-            </head>
-            <body>
-            
-            <h1>Animation Demo</h1>
-            
-            <img src="https://3.bp.blogspot.com/-py5FbTZgvjo/YDi1bsQq16I/AAAAAAAACB0/BxejbJBcHA4AVfkB33WYC3YlVmxElM7BwCK4BGAYYCw/s1600/Varanasi%2BSoftware%2BJunction%2BPhone%2BLogo.png" class="myimage">
-            
-            </body>
-            </html>
-            
-            
-            
 
 </textarea>
                     <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
@@ -617,8 +611,10 @@
         }
     </style>
 
-    <script src="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/js/codemirror.js"></script>
-    <script src="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/js/codemirror_jsx.js"></script>
+    <script
+        src="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/js/codemirror.js"></script>
+    <script
+        src="https://varanasi-software-junction.github.io/varanasi-software-junction/downloads/js/codemirror_jsx.js"></script>
     <script>
         submitTryit()
 
@@ -874,6 +870,9 @@
         }
         //uic_r_e()
     </script>
-   </body>
+    <script>
+        loadData();
+    </script>
+</body>
 
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <script>
+        function saveHtml()
+        {
+            let data=document.getElementById("textareaCode").value;
+            //alert(data);
+            //data="Champak";
+            console.log(data);
+            saveData("html",data);
+        }
+        function saveData(key, data) {
+            try {
+                localStorage.setItem(key, data);
+                console.log("Saved " + data);
+                return true;
+            }
+            catch (e) {
+                console.log(e);
+                return false;
+            }
+        }
+        function readData(key) {
+            let data = localStorage.getItem(key);
+            return data;
+        }
+        function deleteDataByKey(key) {
+            localStorage.removeItem(key);
+        }
+        function deleteAllData(key) {
+            localStorage.clear();
+        }
+        function loadData()
+        {
+            let data=readData("html");
+            let txteditor=document.getElementById("textareaCode");
+            txteditor.value=data;
+            console.log("Loaded " + data);
+            //txteditor.innerHTML="bnvnv";
+        }
+
+    </script>
+</head>
+<body>
+    <textarea onkeyup="saveHtml()" id="textareaCode"></textarea>
+    
+    <script>
+        loadData();
+    </script>
+</body>
+</html>
