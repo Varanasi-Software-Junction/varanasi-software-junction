@@ -46,9 +46,14 @@
         }
         function loadData()
         {
+		
             let data=readData("html");
+			data="Champak";
+			console.log("Loaded " + data);
             let txteditor=document.getElementById("textareaCode");
             txteditor.value=data;
+			alert(txteditor.value);
+			
             console.log("Loaded " + data);
             //txteditor.innerHTML="bnvnv";
         }
@@ -572,7 +577,7 @@
         <div id="textareacontainer">
             <div id="textarea">
                 <div id="textareawrapper">
-jjhgjhghjhg
+                    <textarea  onblur="alert();" autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
 </textarea>
                     
                 </div>
@@ -616,6 +621,9 @@ jjhgjhghjhg
         submitTryit()
 
         function submitTryit(n) {
+		saveHtml();
+		
+		
             if (window.editor) {
                 window.editor.save();
             }
@@ -865,7 +873,7 @@ jjhgjhghjhg
                 openMenu();
             }
         }
-        //uic_r_e()
+        
     </script>
     <script>
         loadData();
