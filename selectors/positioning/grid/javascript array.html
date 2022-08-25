@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Array Methods</title>
+    <style>
+input
+{
+    width:300px;
+}
+
+    </style>
+    <script>
+        function f1()
+        {
+            
+            document.getElementById("t1").value=[1,2,3,4].at(3);
+        }
+        function f2()
+        {
+            let a=[1,2,3,4];
+            document.getElementById("t2").value="Popped element = " + a.pop() + ", Array = " + a;
+        }
+        function f3()
+        {
+            let a=[1,2,3,4];
+            document.getElementById("t3").value="Pushed element = " + a.push(5) + ", Array = " + a;;
+        }
+        function f4()
+        {
+            let a=[1,2,3,4];
+            document.getElementById("t4").value="Filled element = " + a.fill(5) + ", Array = " + a;;
+        }
+        function f5()
+        {
+            let a=[1,2,3,4];
+            document.getElementById("t5").value="Return = " + a.reverse() + ", Array = " + a;;
+        }
+        function f6()
+        {
+            let a=[1,2,3,4];
+            document.getElementById("t6").value="Return = " + a.shift() + ", Array = " + a;;
+        }
+        function f7()
+        {
+            let a=[1,2,3,4];
+            document.getElementById("t7").value="Return = " + a.unshift(5) + ", Array = " + a;;
+        }
+        function f8()
+        {
+            let a=[1,2,3,4];
+            document.getElementById("t8").value="Return = " + a.includes(3) + ", Array = " + a;;
+        }
+        function f9()
+        {
+            let a=[1,2,3,4];
+            document.getElementById("t9").value="Return = " + a.map(n => n + 2) + ", Array = " + a;;
+        }
+        function f10()
+        {
+            let a=[1,2,3,4];
+            document.getElementById("t10").value="Return = " + a.some(n => n > 2) + ", Array = " + a;;
+        }
+        function f11()
+        {
+            let a=[1,2,3,2,4];
+            document.getElementById("t11").value="Return = " + a.find(n => n>5) + ", Array = " + a;;
+        }
+        function f12()
+        {
+            let a=[1,2,3,2,4];
+            document.getElementById("t12").value="Return = " + a.every(n => n<30) + ", Array = " + a;;
+        }
+        function f13()
+        {
+            let a=[1,2,3,2,4];
+            document.getElementById("t13").value="Return = " + a.filter(n => n<30) + ", Array = " + a;;
+        }
+    </script>
+</head>
+<body>
+    [1,2,3,4].at(3)  <input type="text" id="t1"/><button  onclick="f1()" >[1,2,3,4].at(3)</button>
+    <br>
+    [1,2,3,4].pop()  <input type="text" id="t2"/><button  onclick="f2()" >[1,2,3,4].pop()</button>
+    <br>
+    [1,2,3,4].push(5)  <input type="text" id="t3"/><button  onclick="f3()" >[1,2,3,4].push(5)</button>
+    <br>
+    [1,2,3,4].fill(5)  <input type="text" id="t4"/><button  onclick="f4()" >[1,2,3,4].fill(5)</button>
+    <br>
+    [1,2,3,4].reverse()  <input type="text" id="t5"/><button  onclick="f5()" >[1,2,3,4].reverse()</button>
+    <br>
+    [1,2,3,4].shift()  <input type="text" id="t6"/><button  onclick="f6()" >[1,2,3,4].shift()</button>
+    <br>
+    [1,2,3,4].unshift(5)  <input type="text" id="t7"/><button  onclick="f7()" >[1,2,3,4].unshift(5)</button>
+    <br>
+    [1,2,3,4].includes(3)  <input type="text" id="t8"/><button  onclick="f8()" >[1,2,3,4].includes(3)</button>
+    <br>
+    [1,2,3,4].map(n => n + 2)  <input type="text" id="t9"/><button  onclick="f9()" >[1,2,3,4].map(n => n + 2)</button>
+    <br>
+    [1,2,3,4].some(n => n > 2)  <input type="text" id="t10"/><button  onclick="f10()" >[1,2,3,4].some(n => n > 2)</button>
+    <br>
+    [1,2,3,2,4].find(n => n>5)  <input type="text" id="t11"/><button  onclick="f11()" >[1,2,3,2,4].find(n => n>5)</button>
+    <br>
+    [1,2,3,2,4].every(n => n<30)  <input type="text" id="t12"/><button  onclick="f12()" >[1,2,3,2,4].every(n => n<30)</button>
+    <br>
+    [1,2,3,2,4].filter(n => n<30)  <input type="text" id="t13"/><button  onclick="f13()" >[1,2,3,2,4].filter(n => n<30)</button>
+    <br>
+</body>
+</html>
