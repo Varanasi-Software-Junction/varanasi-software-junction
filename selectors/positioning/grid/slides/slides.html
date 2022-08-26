@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides</title>
+    <style>
+        img{
+            width:250px;
+        }
+
+
+    </style>
+    <script>
+        var n=4;
+        
+function move()
+{
+let temp=document.getElementById("img0").src;
+for(let i=0;i<=n-2;i++)
+document.getElementById("img" + i).src=document.getElementById("img" + (i+1)).src;
+document.getElementById("img" + (n-1)).src=temp;
+}
+
+    </script>
+</head>
+<body>
+    <img src="images/0.jpg" id="img0"/><img src="images/1.jpg" id="img1"/><img src="images/2.jpg" id="img2"/><img src="images/3.jpg" id="img3"/>
+</body>
+<script>
+setInterval("move()",4000);
+
+</script>
+</html>
